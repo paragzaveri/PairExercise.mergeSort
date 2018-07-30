@@ -9,7 +9,8 @@ describe('Merge Sort', function(){
 
 describe('Split Array function', function() {
   it('is able to split an array into two halves', function() {
-    expect( split([3,8,6,4,9,1]) ).toEqual( [[3,8,6], [4,9,1]]);
+    expect( split([3,1,2,4]) ).toEqual( [[[3],[1]], [[2],[4]]]);
+    expect( split([3,8,6,4,9,1]) ).toEqual( [ [ [3],[ [8], [6] ] ], [ [4], [ [9], [1]] ] ]);
   });
 });
 
