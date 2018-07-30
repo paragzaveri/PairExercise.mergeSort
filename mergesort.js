@@ -1,17 +1,24 @@
-function split(arr) {
+function split(array) {
 
-  if (arr.length === 1) {
-    return arr;
+  if (array.length === 1) {
+    return array;
   }
 
-  let halfLength;
-  let firstHalf;
-  let secondHalf;
-
-  halfLength = Math.floor(arr.length / 2);
-  firstHalf = arr.slice(0, halfLength);
-  secondHalf = arr.slice(halfLength, arr.length);
-
-  return split(FirstHalf, SecondHalf);
-
 }
+
+function merge(array1, array2){
+
+  let mergedArray = [];
+  for (let i = 0; i < array1.length; i++){
+    mergedArray.push(array1[i]);
+  }
+  for (let i = 0; i < array2.length; i++){
+    mergedArray.push(array2[i]);
+  }
+
+  return mergedArray;
+}
+
+
+// split(arr.slice(0, Math.floor(arr.length/2)));
+// split(arr.slice(Math.floor(arr.length/2), arr.length));
